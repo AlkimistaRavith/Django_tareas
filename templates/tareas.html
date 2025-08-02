@@ -7,5 +7,12 @@
 </head>
 <body>
     <h1>TAREAS!</h1>
+    {% for tarea in tareas %}
+    <li>
+        <a href="{% url= %}"></a><h4> {{ tarea.titulo }} </h4>
+        <p> {{ tarea.descripcion }} </p>
+        <p> {{ tarea.importancia }} </p>
+    </li>
+    {% endfor %}
 </body>
 </html>

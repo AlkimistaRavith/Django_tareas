@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1>Crear Tarea</h1>
+
+    <h1>Formulario para nuevas tareas</h1>
+    <form action="/crear_tarea/" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Guardar tarea">
+    </form>
+
+
 </body>
 </html>
